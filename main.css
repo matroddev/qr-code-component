@@ -1,5 +1,18 @@
 /* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
+/* VARIABLES */
+
+:root {
+  /* COLORS */
+  --clr-white: hsl(-11, 0%, 100%);
+  --clr-light-gray: hsl(212, 45%, 89%);
+  --clr-grayish-blue: hsl(220, 15%, 55%);
+  --clr-dark-blue: hsl(218, 44%, 22%);
+  --primary-font: 'Outfit', sans-serif;
+	--fw-400: 400;
+	--fw-700: 700;
+}
 /* RESET */
 
 * {
@@ -10,11 +23,19 @@
 
 /* GLOBAL STYLES */
 
+body {
+	background: var(--clr-light-gray);
+}
+
 /* CLASS STYLES */
 
 /* ATTRIBUTION STYLES */
 
 .attribution {
+	position: absolute;
+	bottom: 2%;
+	left: 50%;
+	transform: translateX(-50%);
   font-size: 11px;
   text-align: center;
 }
