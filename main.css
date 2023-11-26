@@ -10,6 +10,7 @@
   --clr-grayish-blue: hsl(220, 15%, 55%);
   --clr-dark-blue: hsl(218, 44%, 22%);
   --primary-font: 'Outfit', sans-serif;
+	--primary-fs: 15px;
 	--fw-400: 400;
 	--fw-700: 700;
 }
@@ -25,9 +26,47 @@
 
 body {
 	background: var(--clr-light-gray);
+	font-family: var(--primary-font);
+}
+
+main {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+img {
+	display: block;
+	width: 100%;
+	border-radius: 10px;
 }
 
 /* CLASS STYLES */
+
+.card {
+	background: var(--clr-white);
+	width: 330px;
+	border-radius: 20px;
+	padding: 1rem;
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card__title {
+	font-size: 22px;
+	text-align: center;
+	margin: 1.5rem 1rem;
+	line-height: 1.875rem;
+}
+
+.card__text {
+	font-size: var(--primary-fs);
+	text-align: center;
+	color: var(--clr-grayish-blue);
+	margin: 0 1.75rem 1.75rem 1.75rem;
+}
+
 
 /* ATTRIBUTION STYLES */
 
